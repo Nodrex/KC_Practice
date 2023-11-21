@@ -62,8 +62,8 @@ class MainActivity : ComponentActivity() {
 
                     cancelSingleJob()
                     //cancelParent()
-                    //exceptionIn1Job()
 
+                    //exceptionIn1Job()
                     //mySupervisorJob()
                     //mySupervisorScope()
                     //joinAll()
