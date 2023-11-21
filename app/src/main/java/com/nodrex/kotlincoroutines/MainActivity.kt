@@ -60,9 +60,10 @@ class MainActivity : ComponentActivity() {
                     //coroutineExceptionHandler()
                     //joinCoroutine()
 
-                    //cancelSingleJob()
+                    cancelSingleJob()
                     //cancelParent()
                     //exceptionIn1Job()
+
                     //mySupervisorJob()
                     //mySupervisorScope()
                     //joinAll()
@@ -71,7 +72,7 @@ class MainActivity : ComponentActivity() {
                     //coroutineWithTimeoutOrNull()
                     //repeatWork()
                     //asyncAwait()
-                    asyncAwaitAll()
+                    //asyncAwaitAll()
                 }
             }
         }
