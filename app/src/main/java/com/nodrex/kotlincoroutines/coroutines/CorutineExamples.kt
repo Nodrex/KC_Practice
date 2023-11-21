@@ -5,6 +5,7 @@ import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.CoroutineStart
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -415,4 +416,19 @@ fun asyncAwaitAll() {
     }.invokeOnCompletion {
         log("Coroutine invokeOnCompletion")
     }
+}
+
+fun lazyCoroutine() {
+    val job = CoroutineScope(context = Dispatchers.Default)
+        .launch(start = CoroutineStart.LAZY) {
+            log("Lazy Coroutine started ............")
+        }
+
+    job.invokeOnCompletion {
+        log("Coroutine invokeOnCompletion")
+    }
+
+    //job.start()
+
+    log("lazyCoroutine function finished.")
 }

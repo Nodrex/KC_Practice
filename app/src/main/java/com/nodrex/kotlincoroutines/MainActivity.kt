@@ -25,6 +25,7 @@ import com.nodrex.kotlincoroutines.coroutines.coroutineWithTimeoutOrNull
 import com.nodrex.kotlincoroutines.coroutines.exceptionIn1Job
 import com.nodrex.kotlincoroutines.coroutines.joinAll
 import com.nodrex.kotlincoroutines.coroutines.joinCoroutine
+import com.nodrex.kotlincoroutines.coroutines.lazyCoroutine
 import com.nodrex.kotlincoroutines.coroutines.measureDuration
 import com.nodrex.kotlincoroutines.coroutines.mySupervisorScope
 import com.nodrex.kotlincoroutines.coroutines.repeatWork
@@ -73,6 +74,7 @@ class MainActivity : ComponentActivity() {
                     //repeatWork()
                     //asyncAwait()
                     //asyncAwaitAll()
+                    //lazyCoroutine()
                 }
             }
         }
